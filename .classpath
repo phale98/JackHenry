@@ -2,9 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="Y:/InternProjects/ext/ext/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="Y:/InternProjects/ext/ext/commons-logging-1.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="Y:/InternProjects/ext/ext/org.apache.httpcomponents.httpclient_4.5.3.jar"/>
-	<classpathentry kind="lib" path="Y:/InternProjects/ext/ext/org.apache.httpcomponents.httpcore_4.4.6.jar"/>
+	<classpathentry kind="lib" path="Y:/InternProjects/Java Projects - Copy/Banno Project- gitHub/JackHenry/ext/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="Y:/InternProjects/Java Projects - Copy/Banno Project- gitHub/JackHenry/ext/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="Y:/InternProjects/Java Projects - Copy/Banno Project- gitHub/JackHenry/ext/org.apache.httpcomponents.httpclient_4.5.3.jar"/>
+	<classpathentry kind="lib" path="Y:/InternProjects/Java Projects - Copy/Banno Project- gitHub/JackHenry/ext/org.apache.httpcomponents.httpcore_4.4.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
