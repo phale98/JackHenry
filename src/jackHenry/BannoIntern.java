@@ -1,8 +1,5 @@
 package jackHenry;
 import java.io.IOException;
-import java.io.InputStream;
-
-import org.apache.*;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -25,7 +22,7 @@ public class BannoIntern {
 			//Convert the entity to a string containing the HTML source code for the website
 			String htmlSource = EntityUtils.toString(entity);
 			//use trim to remove any excess white space for faster processing.
-			System.out.print(htmlSource.trim());
+			htmlSource.trim();
 			//Calls the findTwitter method in the FindTwitter class to find locate the twitter handle 
 			String twitterHandle = FindTwitter.findTwitter(htmlSource);
 			//Prints the twitter handle
