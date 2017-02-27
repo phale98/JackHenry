@@ -26,7 +26,7 @@ public class BannoIntern {
 			//Calls the findTwitter method in the FindTwitter class to find locate the twitter handle 
 			String twitterHandle = FindTwitter.findTwitter(htmlSource);
 			//Prints the twitter handle
-			System.out.println("\nTwitter Handle: " + twitterHandle);
+			System.out.println("Twitter Handle: " + twitterHandle);
 			//Calls the countFinance function to count the number of times financial institution appears and stores it.
 			int financeInstitutionCount = FindFinancialInstitution.countFinance(htmlSource);
 			//Prints the result of the countFinance function in the FindFinancialInstitution class.
@@ -45,11 +45,17 @@ public class BannoIntern {
 			int firstOcc = topThree.getFirst();
 			int secondOcc = topThree.getSecond();
 			int thirdOcc = topThree.getThird();
-			System.out.print("The top three letters are: " + topNum + " " + secondNum + " " + thirdNum);
+			//Prints the top three occurring letters in the html source code
+			System.out.print("The top three letters are: " + topNum + ", " + secondNum + ", and " + thirdNum);
+			//Prints the number of occurrences for each letter, respectively.
 			System.out.println(". They occur: " + firstOcc + ", " + secondOcc + ", and " + thirdOcc + " respectively.");
+			//Returns a CountPlatFeats object called features that holds two int values. I wasn't sure if if the stuff in the section product in the html
+			//Was included in the product features list, so I separated them and got them both.
 			CountPlatFeats features = CountPlatFeats.numOfFeats(htmlSource);
+			//Save both of the categories.
 			int numOfProducts = features.getProductsNum();
 			int numOfOthers = features.getNumOfOthers();
+			//Prints out the number of features, both separately and as a total.
 			System.out.println("There are " + numOfProducts + " in the product features section.");
 			System.out.print("There are " + numOfOthers + " in the Website products section.");
 			System.out.print(" All together there are "+ (numOfProducts + numOfOthers) + " features listed\n");
